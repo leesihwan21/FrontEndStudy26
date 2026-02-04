@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>플렉시블 그리드 실습</title>
+ <style>
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+ }
+
+ .row {
+ display: flex;
+ flex-wrap: wrap;
+ margin: 0 -15px; /* 음수 마진으로 거터 상쇄 */
+ }
+
+ .col-4 {
+ width: 33.333%; /* 12컬럼 중 4컬럼 = 33.333% */
+ padding: 0 15px; /* 좌우 여백 (거터) */
+ box-sizing: border-box;
+ }
+
+ .card {
+ background: #f8f9fa;
+ padding: 20px;
+ border-radius: 8px;
+ margin-bottom: 20px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <div class="row">
+ <div class="col-4">
+ <div class="card">
+ <h3>카드 1</h3>
+ <p>첫 번째 카드 내용입니다.</p>
+ </div>
+ </div>
+ <div class="col-4">
+ <div class="card">
+ <h3>카드 2</h3>
+ <p>두 번째 카드 내용입니다.</p>
+ </div>
+ </div>
+ <div class="col-4">
+ <div class="card">
+ <h3>카드 3</h3>
+ <p>세 번째 카드 내용입니다.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</body>
+</html>
+
+

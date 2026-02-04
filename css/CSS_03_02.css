@@ -1,0 +1,17 @@
+<style>
+ textarea {
+ width: 100%;
+ max-width: 500px;
+ min-height: 100px;
+ padding: 10px;
+ border: 2px solid #ddd;
+ border-radius: 5px;
+ font-family: Arial, sans-serif;
+ resize: vertical; /* 세로로만 크기 조절 가능 */
+ }
+
+ textarea:focus {
+ border-color: #4CAF50;
+ outline: none;
+ }
+</style>
