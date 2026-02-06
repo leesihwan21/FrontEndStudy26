@@ -1,0 +1,39 @@
+/* 부드러운 테마 전환 효과 */
+:root {
+    --transition-duration: 0.3s;
+}
+
+* {
+    transition: background-color var(--transition-duration) ease,
+                color var(--transition-duration) ease,
+                border-color var(--transition-duration) ease;
+}
+
+/* 커스텀 테마 전환 버튼 스타일 */
+.theme-toggle-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 다크 모드 전용 스타일 */
+[data-bs-theme="dark"] .custom-dark-card {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border: 1px solid #4a5568;
+}
+
+[data-bs-theme="light"] .custom-dark-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border: 1px solid #e2e8f0;
+}

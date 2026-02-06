@@ -1,0 +1,31 @@
+<!-- 기존 폼에 추가 -->
+<div class="mb-3">
+    <label class="form-label">성별</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+        <label class="form-check-label" for="male">남성</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+        <label class="form-check-label" for="female">여성</label>
+    </div>
+</div>
+
+<div class="mb-3">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="newsletter">
+        <label class="form-check-label" for="newsletter">
+            뉴스레터 구독에 동의합니다
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="terms" required>
+        <label class="form-check-label" for="terms">
+            이용약관에 동의합니다 <span class="text-danger">*</span>
+        </label>
+    </div>
+</div>
+
+<div class="d-grid">
+    <button type="submit" class="btn btn-primary">가입하기</button>
+</div>

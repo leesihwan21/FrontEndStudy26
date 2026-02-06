@@ -1,0 +1,25 @@
+<!-- fade 효과가 있는 캐러셀 -->
+<div id="fadeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- 내용은 동일 -->
+</div>
+
+<script>
+// JavaScript로 캐러셀 제어
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = new bootstrap.Carousel('#productCarousel', {
+        interval: 5000,  // 5초마다 자동 전환
+        wrap: true,      // 마지막 슬라이드 후 첫 번째로 돌아가기
+        touch: true      // 터치 스와이프 지원
+    });
+
+    // 마우스 오버 시 일시정지
+    document.getElementById('productCarousel').addEventListener('mouseenter', function() {
+        carousel.pause();
+    });
+
+    // 마우스 아웃 시 재시작
+    document.getElementById('productCarousel').addEventListener('mouseleave', function() {
+        carousel.cycle();
+    });
+});
+</script>
