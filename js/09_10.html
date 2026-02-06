@@ -1,0 +1,12 @@
+function myRoom() {
+ // 지역 스코프에 선언된 변수
+ let roomNumber = "301호";
+ let mySecret = "비밀일기";
+
+ console.log(roomNumber); // 접근 가능!
+ console.log(apartmentName); // 전역 변수도 접근 가능!
+}
+
+myRoom(); // "301호", "해피빌리지" 출력
+// console.log(roomNumber); // 에러! 접근 불가능
+

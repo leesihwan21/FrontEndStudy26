@@ -1,0 +1,7 @@
+// 기본값이 있는 함수
+function greetWithTime(name, time = "좋은 하루") {
+ console.log("안녕하세요, " + name + "님! " + time + " 되세요!");
+}
+
+greetWithTime("김개발"); // 출력: 안녕하세요, 김개발님! 좋은 하루 되세요!
+greetWithTime("박멘토", "좋은 저녁"); // 출력: 안녕하세요, 박멘토님! 좋은 저녁 되세요!

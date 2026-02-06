@@ -1,0 +1,16 @@
+let userName = "김개발"; // 전역 변수
+
+function greetUser() {
+ let greeting = "안녕하세요"; // 지역 변수
+ console.log(greeting + ", " + userName + "님!");
+}
+
+function showUserInfo() {
+ let userAge = 20; // 지역 변수
+ console.log(userName + "님의 나이: " + userAge);
+ // console.log(greeting); // 오류! 다른 함수의 지역 변수는 접근 불가
+}
+
+greetUser(); // "안녕하세요, 김개발님!"
+showUserInfo(); // "김개발님의 나이: 20"
+console.log(userName); // "김개발" - 전역 변수는 어디서든 접근 가능
